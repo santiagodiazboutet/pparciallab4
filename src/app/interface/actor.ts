@@ -5,6 +5,6 @@ export interface Actor {
   sexo:String,
   fecha_nacimiento:String,
   foto:String;
-  pais:String;
-  bandera:String;
+  nacionalidad:String;
+
 }

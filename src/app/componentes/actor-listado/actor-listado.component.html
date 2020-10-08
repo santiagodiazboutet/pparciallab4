@@ -1,0 +1,28 @@
+
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Diaz Boutet Santiago Parcial Laboratorio 4 primer parcial</h1>
+      <app-listaactor   [lista]="listaActores" (mandaPais)="ActorSeleccionado($event)"></app-listaactor>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row" *ngIf="mostrarBotones">
+      <div class="col-md-4">
+        <app-borrar [pais]="actor" [lista]="listaActores" (mostrar)="mostrar($event)"></app-borrar>
+      </div>
+      <div class="col-md-4">
+        <app-mostrar [pais]="actor"></app-mostrar>
+      </div>
+      <div class="col-md-4">
+        <app-modificar [pais]="actor"></app-modificar>
+      </div>
+    </div>
+
+
+
+  </div> <!-- /container -->
+

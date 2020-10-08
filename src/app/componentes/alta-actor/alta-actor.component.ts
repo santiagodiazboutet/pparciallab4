@@ -8,7 +8,7 @@ import { Actor } from "../../interface/actor";
 export class AltaActorComponent implements OnInit {
   actor:Actor;
   constructor() {
-    this.actor={Nombre:"",apellido:"",bandera:"",fecha_nacimiento:"",foto:"",id:0,pais:"",sexo:""};
+    this.actor={Nombre:"",apellido:"",fecha_nacimiento:"",foto:"",id:0,nacionalidad:"",sexo:""};
 
   }
 
@@ -18,8 +18,8 @@ export class AltaActorComponent implements OnInit {
 
 
   SeleccionoPais(pais){
-    this.actor.pais=pais.name;
-    this.actor.bandera=pais.flag;
+    this.actor.nacionalidad=pais.name;
+
   }
 
   altaActor(){

@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <h2>Mostrar</h2>
+  <p>Nombre Actor.</p>
+  <input type="text" disabled [(ngModel)]="pais.Nombre" *ngIf="pais">
+  <p>Apellido</p>
+  <input type="text" disabled [(ngModel)]="pais.apellido" *ngIf="pais">
+  <p>Sexo</p>
+  <input type="text" disabled [(ngModel)]="pais.sexo" *ngIf="pais">
+  <p>Fecha de nacimiento</p>
+  <input type="text" disabled [(ngModel)]="pais.fecha_nacimiento" *ngIf="pais">
+  <p>nacionalidad</p>
+  <input type="text" disabled [(ngModel)]="pais.nacionalidad" *ngIf="pais">
+  <p><a class="btn btn-secondary" role="button"(click)="accion()">Limpiar Vista »</a></p>
+</div>
