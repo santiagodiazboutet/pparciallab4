@@ -4,7 +4,7 @@ import { AltaActorComponent } from './componentes/alta-actor/alta-actor.componen
 import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
 
 const routes: Routes = [
-  {path:"",component:AltaActorComponent}
+  {path:"altaActor",component:AltaActorComponent}
 ];
 
 @NgModule({
