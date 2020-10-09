@@ -8,3 +8,14 @@ export interface Actor {
   nacionalidad:String;
 
 }
+export interface Pelicula {
+
+
+  img_src:string,
+  nombre:string,
+  fecha_estreno:string,
+  id:number,
+  tipo:"terror"| "comedia" | "amor" | "otros",
+  cant_publico:number
+  actor?:Actor[];
+}

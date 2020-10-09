@@ -14,11 +14,9 @@ export class ActorListadoComponent implements OnInit {
   mostrarBotones:boolean;
 
   constructor(private httpservice:MiHttpService) {
-    this.httpservice.obtenerPaises("https://run.mocky.io/v3/8cd5ec72-bbf7-4964-9332-52ab82774725").subscribe((paises: any) => {
-      this.listaActores=paises;
-    }, error => {
-      console.log('Error');
-    });
+    setTimeout(()=>this.listaActores=this.httpservice.getActores(),500)
+
+    console.log(this.listaActores);
     this.mostrarBotones=false;
    }
 

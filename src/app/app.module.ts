@@ -12,6 +12,8 @@ import { ModificarComponent } from './componentes/modificar/modificar.component'
 import { MostrarComponent } from './componentes/mostrar/mostrar.component';
 import { ActorListadoComponent } from './componentes/actor-listado/actor-listado.component';
 import { ListaactorComponent } from './componentes/listaactor/listaactor.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { PrincipalComponent } from './componentes/principal/principal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ListaactorComponent } from './componentes/listaactor/listaactor.compone
     ModificarComponent,
     MostrarComponent,
     ActorListadoComponent,
-    ListaactorComponent
+    ListaactorComponent,
+    NavbarComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
